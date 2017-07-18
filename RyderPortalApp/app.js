@@ -1,6 +1,7 @@
 var express = require('express');  
 var app = new express();  
-var port = 80;  
+/*var port = 80;  */
+var port = process.env.PORT || 1337;
 app.listen(port, function(err) {  
     if (typeof(err) == "undefined") {  
         console.log('Your application is running on : ' + port + ' port');  
